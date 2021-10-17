@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 311px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.bg-dark {
+    background-color: #373B54 !important;
+}
+
+.form-control {
+    font-size: 1.2rem;
+    padding: 8px;
+    text-transform: capitalize;
+    border: 1px solid #e6e5e5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 10%);
+    outline: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: transparent !important;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 10%);
+}
+
+.form-container {
+    position: relative;
+}
+
+.fa-search {
+    font-size: 15px;
+    color: #fff !important;
+    border: 1px solid #FCB72B;
+    outline: none;
+    background-color: #FCB72B;
+    border-color: #FCB72B;
+    height: 95%;
+    width: 50px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0px 5px 5px 0px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.product-card {
+    width: 100%;
+    height: 450px;
+    box-shadow: 0 5px 35px 0 rgb(0 0 0 / 8%);
+    background-color: #fff;
+    border-radius: 5px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: center;
+    align-content: center;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: 15px auto;
+}
+
+.product-card h3 {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    padding: 3px 0px;
+    color: #4c505d;
+    margin: 0;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
+    word-break: break-word;
+    -webkit-box-orient: vertical;
+}
+
+.product-card p {
+    font-size: 1rem;
+    letter-spacing: .1px;
+    line-height: 1.6rem;
+    margin-bottom: 2px;
+    margin-bottom: 0;
+    color: #9fabb2;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    overflow: hidden;
+    word-break: break-word;
+    -webkit-box-orient: vertical;
+}
+
+.product-image-caption {
+    padding: 15px;
+}
+
+#details h4 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+
+#details p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #6c757d;
+    margin-bottom: 2px;
+}
+
+#details .fas {
+    color: #494566;
+    font-size: 1.8rem;
+    padding: 5px 0px;
+}
+
+#details img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+#details .btn-primary {
+    padding: 0.5rem 3rem;
+    margin: 10px 0px;
+    background-color: #FCB72B;
+    border-color: #FCB72B;
+    transition: all 0.5s ease;
+}
+
+#details .btn-primary:hover {
+    background-color: hsl(171, 66%, 44%);
+    border-color: hsl(171, 66%, 44%);
+
+}
+
+#details img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all ease 1s;
+}
+
+@media(max-width:596px) {
+    .w-50 {
+        width: 80% !important;
+    }
+}
